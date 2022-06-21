@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mikfinal:
+    image: mikcustomer:v1 
+    build: . # location of dockerfile 
+    container_name: mikcc0011
+    ports:
+    - "1181:80"
+    restart: always 
+    environment: 
+      deploy: "app1"
